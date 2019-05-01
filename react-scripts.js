@@ -1,13 +1,19 @@
-function MojKomponent() {
+function MojKomponent({title, content}) {
   return (
     <div>
-      <h1>Witaj, świecie!</h1>
-      <h2>Jestem ambitna/y, więc przerabiam kurs React.js!</h2>
+      <dialog open>
+        <h1>{title}</h1>
+
+        <p>{content}</p>
+      </dialog>
     </div>
   );
 }
 
 ReactDOM.render(
-  <MojKomponent />,
+  <MojKomponent 
+  title="Mój pierwszy komponent"
+  content="Na dodatek z parametrami"
+  />,
   document.getElementById('app')
 );
