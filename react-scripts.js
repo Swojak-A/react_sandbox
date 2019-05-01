@@ -1,4 +1,4 @@
-function MojKomponent({title, content}) {
+function MojKomponent({title = "Modal", content}) {
   return (
     <div>
       <dialog open>
